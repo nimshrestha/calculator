@@ -7,7 +7,7 @@
 .container {
     display: flex;
     flex-direction: column;
-    /* gap: 16px; */
+    gap: 0.5rem;
     width: 20vw;
     height: 50vh;
     margin: 25vh auto;
@@ -20,7 +20,7 @@
 .display {
     height: 25%;
     border: 2px solid black;
-    border-radius: 4px;
+    border-radius: 6px;
     background: white;
     padding: 0.5rem;
     text-align: right;
@@ -35,4 +35,27 @@
 .display > .current {
     height: 65%;
     font-size: 30px;
+}
+
+.edit {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.edit > button {
+    flex-basis: 100px;
+    flex-grow: 1;
+    padding: 1rem;
+    border: 2px solid black;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+#clear {
+    background: rgba(42, 165, 52, 0.418);
+}
+
+#delete {
+    background: rgba(255, 0, 0, 0.418);
 }
